@@ -11,6 +11,7 @@ namespace CatchGame
 {
     class Window1 : Form
     {
+        public static PictureBox gameBox = new PictureBox();
         public Window1()
         {
             TableLayoutPanel panel = new TableLayoutPanel
@@ -22,7 +23,7 @@ namespace CatchGame
             panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80));
             Controls.Add(panel);
 
-            PictureBox gameBox = new PictureBox
+            gameBox = new PictureBox
             {
                 Dock = DockStyle.Fill,
                 BackColor = Color.White

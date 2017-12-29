@@ -15,6 +15,14 @@ namespace CatchGame
         public Window2()
         {
 
+            Image hamburger = Image.FromFile("Hamburger.jpg");
+            Image pizza = Image.FromFile("Pizza.jpg");
+            Image muffin = Image.FromFile("Muffin.jpg");
+            Image sushi = Image.FromFile("Sushi.jpg");
+
+           
+
+            
         }
     }
 }
