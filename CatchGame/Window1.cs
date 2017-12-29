@@ -16,19 +16,23 @@ namespace CatchGame
             TableLayoutPanel panel = new TableLayoutPanel
             {
             ColumnCount = 2,
-            Dock = DockStyle.Fill
-        };
+            Dock = DockStyle.Fill,
+            BackColor = Color.Black
+            };
+            panel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 80));
             Controls.Add(panel);
 
             PictureBox gameBox = new PictureBox
             {
-                Dock = DockStyle.Fill
+                Dock = DockStyle.Fill,
+                BackColor = Color.White
             };
             panel.Controls.Add(gameBox);
 
             Label score = new Label
             {
-                Text = "Score"
+                Text = "Score",
+                ForeColor = Color.White
             };
             panel.Controls.Add(score);
 
